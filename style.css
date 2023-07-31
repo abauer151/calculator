@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100&family=Indie+Flower&family=Pacifico&display=swap');
+
+/* * {
+    border: red solid 1px;
+} */
+
+body,
+.calculator,
+.numpad button,
+.side-bar button,
+.top-row button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    flex-direction: column;
+    border: black solid 1px;
+    width: 450px;
+    height: 550px;
+}
+
+#display {
+    display: flex;
+    font-size: 50px;
+    width: 340px;
+}
+
+.numpad {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 255px;
+    height: 340px;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    font-size: 50px;
+    font-family: 'Handjet', cursive;
+    font-weight: bolder;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 340px;
+    width: 85px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85px;
+    width: 340px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 350px;
+    height: 425px;
+}
+
