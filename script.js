@@ -30,8 +30,15 @@ function operate(string)
     string = string.replaceAll(" ", "");
     string = string.replaceAll(",", "");
 
+    if(string.charAt(0) === "\u221A")
+    {
+        clear();
+        display.value = evaluate(string.slice(1), 0.5, "^");
+        return;
+    }
+
     let operatorIndex = findOperator(string);
-    console.log(operatorIndex);
+
     if(operatorIndex === -1)
     {
         clear();

@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100&family=Indie+Flower&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap');
 
 /* * {
     border: red solid 1px;
 } */
+
+body {
+    height: 80vh;
+    background-color: lightyellow;
+}
 
 body,
 .calculator,
@@ -17,14 +22,19 @@ body,
 .calculator {
     flex-direction: column;
     border: black solid 1px;
+    border-radius: 8px;
     width: 450px;
     height: 550px;
+    background-color: rgb(19, 18, 18)
 }
 
 #display {
     display: flex;
-    font-size: 50px;
+    height: 65px;
+    font-size: 35px;
     width: 340px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 15px;
 }
 
 .numpad {
@@ -39,9 +49,11 @@ button {
     width: 75px;
     height: 75px;
     margin: 5px;
-    font-size: 50px;
-    font-family: 'Handjet', cursive;
-    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Bungee', cursive;
+    border: none;
+    border-radius: 8px;
+    color: white;
 }
 
 .buttons {
@@ -75,3 +87,14 @@ button {
     height: 425px;
 }
 
+.numpad button {
+    background-color: cornflowerblue;
+}
+
+.side-bar button {
+    background-color: coral;
+}
+
+.top-row button {
+    background-color: darkblue;
+}
